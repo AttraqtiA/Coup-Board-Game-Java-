@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Main {
+
     private Scanner s = new Scanner(System.in);
     private ArrayList<Player> players = new ArrayList<>();
     private Player currentPlayer = new Player("Default");
@@ -170,6 +171,8 @@ public class Main {
         int targetChoice = s.nextInt();
         currentPlayer.getInfluenceCards().get(cardChoice - 1).Action(currentPlayer, players.get(targetChoice));
     }
+
+    // INI KUNCI CHECK, buat yang nemu Githubku
 
     private String ANSI_CYAN_BACKGROUND = "\u001b[46m";
     private String ANSI_GREEN_BACKGROUND = "\u001b[42m";
